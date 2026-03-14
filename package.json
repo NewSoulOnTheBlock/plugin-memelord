@@ -1,0 +1,30 @@
+{
+  "name": "@elizaos/plugin-memelord",
+  "version": "0.1.0",
+  "description": "ElizaOS plugin for AI meme generation via the Memelord API",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "bun test"
+  },
+  "peerDependencies": {
+    "@elizaos/core": "^1.0.0"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0"
+  },
+  "keywords": ["elizaos", "plugin", "meme", "memelord", "ai-agent"],
+  "agentConfig": {
+    "pluginType": "elizaos:plugin:1.0.0",
+    "pluginParameters": {
+      "MEMELORD_API_KEY": {
+        "type": "string",
+        "description": "Memelord API key (mlord_live_...)"
+      }
+    }
+  }
+}
